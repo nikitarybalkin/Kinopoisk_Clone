@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Кинопоиск Клон</string>
+    <string name="films">Фильмы</string>
+    <string name="genres">Жанры</string>
+    <string name="kinopoisk">КиноПоиск</string>
+    <string name="retry">ПОВТОРИТЬ</string>
+    <string name="no_rating">Нет оценок</string>
+</resources>

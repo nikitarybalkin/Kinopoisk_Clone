@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.CurrentFilmFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        >
+        <FrameLayout
+            android:id="@+id/fl_top_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/blue_primary"
+            >
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start|center_vertical"
+                >
+                <ImageView
+                    android:id="@+id/bt_back"
+                    android:layout_gravity="center"
+                    android:layout_width="19dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_back_arrow"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_top_name"
+                android:layout_gravity="center"
+                android:paddingVertical="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginHorizontal="88dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_semibold"
+                android:layout_height="wrap_content"
+                />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="201dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/films"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="26sp"
+            android:layout_marginHorizontal="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_genre_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/films"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="16dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.7"
+                android:textColor="@color/blue_primary"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_kinopoisk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kinopoisk"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/blue_primary"
+                android:textFontWeight="700"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginTop="14sp"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
